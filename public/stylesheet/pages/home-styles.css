@@ -1,0 +1,72 @@
+body{
+    background-color: #55828B;
+    max-width: 100%;
+    color: #103713;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    margin:20px;
+    column-gap: 1%;
+    row-gap: 1%;
+    background-color: #55828B;
+}
+
+.navbar{
+    background-color: #1B5E20;
+    color: #0A240C;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-evenly; /* Or another value you prefer */
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px; /* Add some space between the items */
+}
+
+button{
+    background-color: #86DEB7;
+    padding: 15px;
+    margin: 10px; /* You might still want a little margin around the button */
+    /* margin-left: 100px;  <-- Remove these */
+    /* margin-right: 100px; <-- Remove these */
+    white-space: nowrap;
+}
+
+
+.text_box1{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #ADEEE3;
+}
+
+.text_box2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #ADEEE3;
+}
+
+.text_box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #ADEEE3;
+}
+
+.footer{
+    background-color: #1B5E20;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
