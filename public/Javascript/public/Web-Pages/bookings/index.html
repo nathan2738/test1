@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings</title>
+  <link rel="stylesheet" href="/stylesheet/pages/booking.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <h1>Rolsa Technologies</h1>
+        <button id="homeButton" >Home</button>
+        <button id="learnMoreButotn" >Learn More</button>
+        <button id="carbonCalculatorButton">Carbon calculator</button>
+        <butto id="bookingsButton" >Bookings</button>
+        <button id="loginButton">Login</button>
+    </div>
+
+    <h1>Book a Service</h1>
+  
+    <h2>Select Service Type</h2>
+    <label><input type="radio" name="serviceType" value="installation" checked> Installation</label>
+    <label><input type="radio" name="serviceType" value="maintenance"> Maintenance</label>
+    <label><input type="radio" name="serviceType" value="consultation"> Consultation</label>
+  
+    <!-- Installation Form -->
+    <div id="installationForm" style="display: block;">
+      <h3>Installation Booking</h3>
+      <form id="installForm">
+        <label for="installOption">Installation Type:</label>
+        <select id="installOption" required>
+          <option value="">-- Select an option --</option>
+          <option value="Smart Home Energy Management System">Smart Home Energy Management System</option>
+          <option value="Electric Vehicle Charging Station">Electric Vehicle Charging Station</option>
+          <option value="Solar Panel">Solar Panel</option>
+        </select>
+
+        <br><br>
+
+        <label for="installationDate">Installation Date:</label> 
+        <input type="date" id="installationDate" required />
+  
+        <div id="installTimesChart"></div>
+  
+        <button type="submit">Book Installation</button>
+      </form>
+    </div>
+  
+    <!-- Maintenance Form -->
+    <div id="maintenanceForm" style="display: none;">
+      <h3>Maintenance Request</h3>
+      <form id="maintForm">
+        <br>
+        <label for="maintenanceOption">Maintenance Type:</label> <br>
+        <select id="maintenanceOption" required>
+          <option value="">-- Select an option --</option>
+          <option value="Smart Home Energy Management System">Smart Home Energy Management System</option>
+          <option value="Electric Vehicle Charging Station">Electric Vehicle Charging Station</option>
+          <option value="Solar Panel">Solar Panel</option>
+        </select>
+ 
+ 
+        <label for="issueDescription">Describe the issue:</label>
+        <textarea id="issueDescription" rows="1" required></textarea>
+  
+        <br>
+        <label for="maintenanceDate">Preferred Maintenance Date:</label>
+        <input type="date" id="maintenanceDate" required />
+  
+        <div id="maintenanceTimesChart"></div>
+  
+        <button type="submit">Request Maintenance</button>
+      </form>
+    </div>
+  
+    <!-- Consultation Form -->
+    <div id="consultationForm" style="display: none;">
+      <h3>Consultation Booking</h3>
+      <form id="consultForm">
+        <label for="consultationType">Consultation Type:</label>
+        <label><input type="radio" name="consultationType" value="live" required> Live Consultation</label>
+        <label><input type="radio" name="consultationType" value="face-to-face"> Face-to-Face Consultation</label>
+  
+        <label for="consultationDate">Preferred Consultation Date:</label>
+        <input type="date" id="consultationDate" required />
+  
+        <button type="submit">Book Consultation</button>
+      </form>
+    </div>
+  
+    <div id="responseMessage"></div>
+  <script src="/Javascript/nav-bar.js"></script>
+  <script src="/Javascript/booking.js"></script>
+</body>
+</html>

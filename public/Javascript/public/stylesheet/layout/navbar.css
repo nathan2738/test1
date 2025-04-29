@@ -1,0 +1,22 @@
+/* basic format */
+
+.navbar{
+    background-color: #1B5E20;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+button{
+    background-color: #86DEB7;
+    padding: 15px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    white-space: nowrap;
+}

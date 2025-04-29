@@ -1,0 +1,20 @@
+body{
+    background-color: #55828B;
+    max-width: 100%;
+    color: #103713;
+}
+
+.container{
+    text-align: center;
+    
+}
+
+
+
+.footer{
+    background-color: #1B5E20;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

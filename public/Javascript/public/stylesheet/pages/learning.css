@@ -1,0 +1,142 @@
+body {
+    background-color: #55828B;
+    max-width: 100%;
+    color: #103713;
+    margin: 0; /* Let's reset the default margin for the body */
+    font-size: 50px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto; /* Using 'auto' makes rows adjust to content */
+    margin: 20px;
+    column-gap: 1%;
+    row-gap: 1%;
+    background-color: #55828B;
+    min-height: 100vh;
+
+  }
+  
+  .navbar {
+    background-color: #1B5E20;
+    color: #0A240C;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-around; /* Changed to space-around for better button spacing */
+    align-items: center;
+    padding: 15px; /* Added some padding to the navbar */
+  }
+  
+  .navbar h1 {
+    margin: 0; /* Reset margin for the heading in the navbar */
+  }
+  
+  .navbar button {
+    background-color: #86DEB7;
+    padding: 10px 15px; /* Adjusted padding for buttons */
+    border: none; /* Removed button borders */
+    border-radius: 5px; /* Added rounded corners to buttons */
+    cursor: pointer; /* Makes the button look clickable */
+    font-size: 1em; /* Set a font size for the buttons */
+  }
+  
+  .text_box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #ADEEE3;
+    padding: 20px; /* Added padding to the text boxes */
+  }
+  
+  .text_box2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #ADEEE3;
+    padding: 20px;
+  }
+  
+  .img_box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #55828B;
+  }
+  
+  .img_box1 img,
+  .img_box2 img,
+  .img_box3 img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    display: block; /* Prevent extra space below inline images */
+  }
+  
+  .img_box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #55828B;
+  }
+  
+  .text_box3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #ADEEE3;
+    padding: 20px;
+  }
+  
+  .text_box4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #ADEEE3;
+    padding: 20px;
+  }
+  
+  .img_box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #55828B;
+  }
+  
+  .text_box5 {
+    background-color: #ADEEE3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #1B5E20;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    padding: 10px;
+    text-align: center;
+    color: #ADEEE3; /* Added some color to the footer text */
+  }

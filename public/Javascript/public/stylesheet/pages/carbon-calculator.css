@@ -1,0 +1,116 @@
+body{
+background-color: #1B5E20;
+max-width: 100%;
+background-color: #55828B;
+}
+
+.container {
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 1fr 3fr 1fr;
+margin:20px;
+column-gap: 1%;
+row-gap: 1%;
+background-color: #55828B;
+}
+
+form {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+background-color: #ADEEE3;
+max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+justify-content: center;
+align-items: center;
+}
+
+h1 {
+text-align: center;
+color: #4CAF50;
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input[type="radio"],
+input[type="number"],
+select {
+margin: 5px 0 15px 0;
+padding: 10px;
+width: 100%;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+input[type="radio"] {
+display: inline-block;
+width: auto;
+margin-right: 5px;
+}
+
+.next-Questions-button, #calculateButton, #backButton {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 10px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.next-Questions-button:hover, #calculateButton:hover, #backButton:hover {
+background-color: #45a049;
+}
+
+.next-Questions-button:disabled {
+background-color: #ccc;
+cursor: not-allowed;
+}
+
+#carTypes {
+margin-top: 10px;
+}
+
+#carMilesErrorMessage {
+color: red;
+display: none;
+margin-top: 10px;
+}
+
+#result {
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+margin-top: 20px;
+padding: 15px;
+background-color: #e6f4e5;
+border: 1px solid #4CAF50;
+border-radius: 5px;
+display: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+form {
+    padding: 15px;
+}
+input[type="number"], select {
+    width: 100%;
+}
+.next-Questions-button, #calculateButton, #backButton {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+}
